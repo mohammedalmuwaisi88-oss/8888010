@@ -6,7 +6,7 @@
 // Store Configuration
 const STORE_CONFIG = {
     brandName: "L'ÉLÉGANCE",
-    whatsappNumber: "96872420072",
+    whatsappNumber: "96872420073",
     currency: "ر.ع",
     socialLinks: {
         instagram: "https://instagram.com/lelegance.jewelry",
@@ -225,7 +225,6 @@ function toggleProducts() {
     } else {
         toggleProductsBtn.querySelector('span').textContent = 'عرض جميع المنتجات';
         toggleProductsBtn.querySelector('i').className = 'fa-solid fa-chevron-down';
-        // Smooth scroll back to collection top
         document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
     }
 }
@@ -607,7 +606,6 @@ function openWhatsAppOrder(customer) {
     const encodedText = encodeURIComponent(orderText);
     const whatsappUrl = `https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${encodedText}`;
 
-    // Clear cart and close modal after launching WhatsApp
     cart = [];
     saveCart();
     renderCart();
