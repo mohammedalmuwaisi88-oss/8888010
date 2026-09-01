@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قلادة | دار المجوهرات الفاخرة</title>
+    <meta name="description" content="مجوهرات مصممة حصريًا تجمع بين الحرفية الراقية، التفاصيل الدقيقة، والأناقة الخالدة.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Alexandria:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span>شحن مجاني لكافة أرجاء السلطنة والخليج للطلبات الأعلى من 150 ر.ع</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-brand">
+                <a href="#hero" class="brand-logo">قلادة</a>
+                <span class="brand-sub">HAUTE JOAILLERIE</span>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <div class="mobile-nav-header">
+                    <span class="brand-logo">قلادة</span>
+                    <button class="close-nav" id="closeNav"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#collection" class="nav-link">المجموعة</a></li>
+                    <li><a href="#about-brand" class="nav-link">قصتنا</a></li>
+                    <li><a href="#why-us" class="nav-link">لماذا نحن</a></li>
+                    <li><a href="#about-us" class="nav-link">من نحن</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="action-btn" id="searchBtn" title="بحث">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="action-btn" id="wishlistBtn" title="المفضلة">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="action-btn cart-btn" id="cartBtn" title="سلة التسوق">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Overlay Container -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="close-search" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-input-group">
+                <input type="text" id="searchInput" placeholder="ابحث عن قطعة مجوهرات (مثال: خاتم، قلادة...)" autocomplete="off">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <div class="search-results" id="searchResults">
+                <p class="search-placeholder">ابدأ الكتابة للبحث في تشكيلتنا الحصرية...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=2000" alt="قلادة Fine Jewelry">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-subtitle">تشكيلة 2026 الحصرية</span>
+                <h1 class="hero-title">مجوهرات تُصنع لتبقى</h1>
+                <p class="hero-description">
+                    تصاميم استثنائية تجمع بين الحرفية الراقية، التفاصيل الدقيقة، وأناقة لا تتبع الموضة بل تصنعها.
+                </p>
+                <div class="hero-actions">
+                    <a href="#collection" class="btn btn-primary">اكتشف المجموعة</a>
+                    <a href="#about-brand" class="btn btn-outline">تعرّف على البراند</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Brand Intro Section -->
+        <section class="about-brand" id="about-brand">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-image-wrapper">
+                        <div class="img-frame">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000" alt="صناعة المجوهرات الفاخرة">
+                        </div>
+                    </div>
+                    <div class="about-text-content">
+                        <span class="section-tag">الفلسفة والتصميم</span>
+                        <h2 class="section-title">صناعة تحمل بصمتنا</h2>
+                        <div class="title-divider"></div>
+                        <p class="lead-text">
+                            نؤمن أن المجوهرات ليست مجرد قطعة تُرتدى، بل تفصيل يعكس شخصية من يرتديها. لذلك نصمم كل قطعة بعناية لنمنحك تجربة تجمع بين الفن، الجودة، والتميز.
+                        </p>
+                        <p class="body-text">
+                            منذ انطلاقتنا، اخترنا ألا نكون مجرد متجر للمجوهرات، بل دارًا للفن المصاغ بأسلوب رفيع. يتم اختيار الأحجار الكريمة والمعادن النفيسة وفق أقصى معايير النقاء، ليتم تشكيلها بأيدي نخبة من المصممين والحرفيين.
+                        </p>
+                        <div class="brand-signature">
+                            <span class="sig-name">قلادة Atelier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us" id="why-us">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">معايير التميز</span>
+                    <h2 class="section-title">لماذا قلادة؟</h2>
+                    <div class="title-divider center"></div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-num">01</span>
+                        <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3>تصاميم حصرية</h3>
+                        <p>تصاميم مبتكرة تحمل هوية خاصة ولا تعتمد على التصاميم التقليدية، مُصممة حصريًا داخل دورنا.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">02</span>
+                        <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>جودة استثنائية</h3>
+                        <p>اهتمام دقيق بالتفاصيل والخامات المستخدمة في كل قطعة لضمان نقاء الذهب وبريق الأحجار.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">03</span>
+                        <div class="feature-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                        <h3>صناعة بعناية</h3>
+                        <p>كل قطعة تمر بمراحل صياغة دقيقة واختبارات متتالية لضمان أفضل نتيجة ممكنة تنبض بالدقة.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">04</span>
+                        <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+                        <h3>أناقة تدوم</h3>
+                        <p>تصاميم لا تعتمد على صيحات الموضة المؤقتة بل تصاغ بأسلوب أزلي خالد يمتد عبر الأجيال.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">05</span>
+                        <div class="feature-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <h3>تجربة فاخرة</h3>
+                        <p>نهتم بتجربة العميل من لحظة اختيار القطعة والتغليف الفاخر وحتى وصولها بأمان إلى يديك.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">06</span>
+                        <div class="feature-icon"><i class="fa-solid fa-sparkles"></i></div>
+                        <h3>تفاصيل تصنع الفرق</h3>
+                        <p>نؤمن أن قيمة القطعة تظهر في أصغر تفاصيلها الحرفية التي تُضفي لمسة سحرية لا تُخطئها العين.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Collection Section -->
+        <section class="collection" id="collection">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">معرض القطع النادرة</span>
+                    <h2 class="section-title">مجموعتنا الحصرية</h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <!-- Products will be dynamically populated via JavaScript -->
+                </div>
+
+                <div class="load-more-wrapper text-center">
+                    <button class="btn btn-outline-dark" id="toggleProductsBtn">
+                        <span>عرض جميع المنتجات</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Full Story Section -->
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="about-us-content">
+                        <span class="section-tag">رؤيتنا ورسالتنا</span>
+                        <h2 class="section-title">من نحن</h2>
+                        <div class="title-divider"></div>
+                        <p class="paragraph">
+                            تأسست دار **قلادة** لتكون وجهة لعشاق الفخامة والقطع الاستثنائية. نحن لسنا مجرد متجر مجوهرات، بل نحن معمل للفن الرفيع حيث تلتقي الأصالة بالحداثة في كل تصميم.
+                        </p>
+                        <p class="paragraph">
+                            نضع بين يديك شغف سنوات من الحرفية الدقيقة والابتكار المستمر. رؤيتنا تقوم على التعبير عن التميز والشخصية الفريدة لكل من يرتدي قطعنا، مع التزامنا التام بأعلى معايير الجودة والاستدامة في كافة خاماتنا.
+                        </p>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">تصاميم حصرية</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">+15</span>
+                                <span class="stat-label">عامًا من الخبرة</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">10k+</span>
+                                <span class="stat-label">عميل سعيد</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us-image">
+                        <div class="image-stack">
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000" alt="دار قلادة" class="img-primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">نحن هنا لخدمتك</span>
+                    <h2 class="section-title">تواصل معنا</h2>
+                    <div class="title-divider center"></div>
+                </div>
+                <div class="contact-cards-grid">
+                    <a href="tel:+96872420072" class="contact-card">
+                        <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                        <h3>الاتصال المباشر</h3>
+                        <p>+968 7242 0072</p>
+                        <span class="card-link">اتصل بنا الآن</span>
+                    </a>
+                    <a href="https://wa.me/96872420072" target="_blank" class="contact-card">
+                        <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <h3>واتساب المبيعات</h3>
+                        <p>+968 7242 0072</p>
+                        <span class="card-link">محادثة مباشرة</span>
+                    </a>
+                    <a href="mailto:info@qiladah.om" class="contact-card">
+                        <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>info@qiladah.om</p>
+                        <span class="card-link">أرسل رسالة</span>
+                    </a>
+                    <a href="https://instagram.com" id="contactInstagramLink" target="_blank" class="contact-card">
+                        <div class="c-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <h3>إنستغرام</h3>
+                        <p>@Qiladah.Jewelry</p>
+                        <span class="card-link">تابع جديدنا</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="closeProductModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal Drawer -->
+    <div class="drawer" id="wishlistDrawer">
+        <div class="drawer-overlay" id="wishlistOverlay"></div>
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h3>المفضلة (<span id="wishlistDrawerCount">0</span>)</h3>
+                <button class="close-drawer" id="closeWishlist"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="drawer-body" id="wishlistBody">
+                <!-- Items populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="drawer" id="cartDrawer">
+        <div class="drawer-overlay" id="cartOverlay"></div>
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h3>سلة التسوق (<span id="cartDrawerCount">0</span>)</h3>
+                <button class="close-drawer" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="drawer-body" id="cartBody">
+                <!-- Dynamic Cart Items -->
+            </div>
+            <div class="drawer-footer" id="cartFooter">
+                <div class="summary-line">
+                    <span>المجموع الفرعي:</span>
+                    <span id="cartSubtotal">0.00 ر.ع</span>
+                </div>
+                <div class="summary-line">
+                    <span>الشحن:</span>
+                    <span class="free-shipping">مجاني</span>
+                </div>
+                <div class="summary-line total-line">
+                    <span>الإجمالي الكلي:</span>
+                    <span id="cartTotal">0.00 ر.ع</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="proceedCheckoutBtn">إتمام الطلب</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-overlay" id="checkoutOverlay"></div>
+        <div class="modal-container modal-lg">
+            <button class="modal-close" id="closeCheckoutModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-wrapper">
+                <h2 class="checkout-title">إتمام الطلب الفاخر</h2>
+                <div class="checkout-grid">
+                    <form id="checkoutForm" class="checkout-form">
+                        <div class="form-section">
+                            <h4>بيانات توصيل الطلب</h4>
+                            <div class="form-group">
+                                <label for="custName">الاسم الكامل *</label>
+                                <input type="text" id="custName" placeholder="أدخل اسمك الثلاثي" required>
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="custPhone">رقم الهاتف (الواتساب) *</label>
+                                <input type="tel" id="custPhone" placeholder="مثال: 96891234567" required>
+                                <span class="error-msg" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="custState">الولاية / المنطقة *</label>
+                                <input type="text" id="custState" placeholder="مثال: مسقط / صحار / السيب" required>
+                                <span class="error-msg" id="stateError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="custAddress">العنوان الكامل التفصيلي *</label>
+                                <textarea id="custAddress" rows="2" placeholder="المنطقة، الشارع، رقم المنزل أو أي معالم قريبة" required></textarea>
+                                <span class="error-msg" id="addressError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="custNotes">ملاحظات إضافية (اختياري)</label>
+                                <input type="text" id="custNotes" placeholder="أي تعليمات خاصة بالتغليف أو التوصيل">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>اختر طريقة إتمام الطلب</h4>
+                            <div class="payment-options">
+                                <label class="payment-option-card active">
+                                    <input type="radio" name="paymentMethod" value="whatsapp" checked>
+                                    <div class="opt-content">
+                                        <div class="opt-header">
+                                            <i class="fa-brands fa-whatsapp opt-icon text-whatsapp"></i>
+                                            <span class="opt-title">الطلب المباشر عبر WhatsApp</span>
+                                        </div>
+                                        <p class="opt-desc">سيتم تجهيز تفاصيل طلبك وإرسالها فورًا عبر تطبيق واتساب للتأكيد الفوري.</p>
+                                    </div>
+                                </label>
+
+                                <label class="payment-option-card">
+                                    <input type="radio" name="paymentMethod" value="online">
+                                    <div class="opt-content">
+                                        <div class="opt-header">
+                                            <i class="fa-solid fa-credit-card opt-icon"></i>
+                                            <span class="opt-title">الدفع الإلكتروني (بطاقة بنكية / بطاقة ائتمان)</span>
+                                        </div>
+                                        <p class="opt-desc">دفع آمن ومشفر عبر بوابات الدفع الإلكترونية المحلية والدولية.</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitOrderBtn">
+                            تأكيد الطلب الآن
+                        </button>
+                    </form>
+
+                    <div class="order-summary-box">
+                        <h4>ملخص الطلب</h4>
+                        <div class="summary-items-list" id="checkoutItemsList">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <div class="summary-totals">
+                            <div class="sum-row">
+                                <span>المجموع الفرعي</span>
+                                <span id="checkoutSubtotal">0.00 ر.ع</span>
+                            </div>
+                            <div class="sum-row">
+                                <span>التوصيل الفاخر</span>
+                                <span>مجاني</span>
+                            </div>
+                            <div class="sum-row grand-total">
+                                <span>المجموع النهائي</span>
+                                <span id="checkoutGrandTotal">0.00 ر.ع</span>
+                            </div>
+                        </div>
+                        <div class="secure-badge">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>تسوق آمن وتشفير بيانات 100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <span class="brand-logo">قلادة</span>
+                    <span class="brand-sub">HAUTE JOAILLERIE</span>
+                    <p class="footer-desc">
+                        دار مجوهرات فاخرة توفر أروع التصاميم الحصرية المبتكرة بشغف ودقة، لتمنحك الأناقة الخالدة التي تستحقها.
+                    </p>
+                    <div class="social-links" id="socialLinks">
+                        <!-- Links populated dynamically or configured -->
+                        <a href="https://instagram.com" id="socialInstagram" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" id="socialTiktok" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://facebook.com" id="socialFacebook" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://x.com" id="socialX" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">روابط السريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#collection">المجموعة الحصرية</a></li>
+                        <li><a href="#about-brand">قصة العلامة</a></li>
+                        <li><a href="#why-us">لماذا قلادة</a></li>
+                        <li><a href="#about-us">من نحن</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">تواصل معنا</a></li>
+                        <li><a href="#contact">الأسئلة الشائعة</a></li>
+                        <li><a href="#contact">سياسة الشحن والتوصيل</a></li>
+                        <li><a href="#contact">جدول القياسات والأنماط</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">تواصل معنا</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> سلطنة عمان - مسقط / صحار</li>
+                        <li><i class="fa-solid fa-phone"></i> +968 7242 0072</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +968 7242 0072</li>
+                        <li><i class="fa-regular fa-envelope"></i> info@qiladah.om</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 قلادة Haute Joaillerie. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
